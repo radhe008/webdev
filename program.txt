@@ -1,0 +1,1429 @@
+## 1. Design a form for Employee registration which includes all elements of form tags.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<style>
+    body {
+       
+        margin: 0px;
+        padding: 50px;
+        text-align: start;
+    }
+    input {
+        margin: 1=50px;
+    }
+    .abhi {
+        text-align: center;
+    }
+    .content
+    {margin-left: 33%;
+    }
+</style>
+<body>
+    <h1 class="abhi">Employee Registration Form</h1>
+    <div class="content">
+    <label for="name">Full Name:</label>
+    <input type="text">
+    <br>
+    <label for="name">Father's Name:</label>
+    <input type="text">
+    <br>
+    <label for="name">Mother's Name:</label>
+    <input type="text">
+    <br>
+    <label for="dob">DOB:</label>
+    <input type="date" name="dob" id="dob">
+    <br>
+    <label for="name">Email:</label>
+    <input type="text">
+    <br>
+    <label for="name">Contact Number:</label>
+    <input type="text">
+    <br>
+    <label for="name">Address:</label>
+    <input type="text">
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+    <input type="radio" name="gender"> Other
+    <br><br>
+    <label for="Department">Department:</label>
+    <select name="dep" id="dep">
+        <option value="accounts">Accounts</option>
+        <option value="admin">Administration</option>
+        <option value="it">IT</option>
+        <option value="management">Management</option>
+    </select>
+    <br><br>
+    <label for="image">Photo:</label>
+    <input type="file">
+    <br>
+    <input type="submit" value="Register">
+    <br><br><br><br>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+## 2. Write a HTML code to generate a class timetable and add external CSS to customize the properties of the font, background etc. (color, bold and font size)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Table</title>
+<link rel="stylesheet" type="text/css" href="../CSS/abhi.css">
+<script src="../Javascript/first.js"></script>
+</head>
+<body>
+<h1 class="heading" style="text-align: center;">GRAPHIC ERA DEEMED TO BE UNIVERSITY</h1>
+<h2 class="sub-heading" style="text-align: center;">ONLINE TIME TABLE OF B. TECH. VIth SEMESTER “ COMPUTER SCIENCE & ENGG.-H"</h2>
+<h2 class="sub-heading-2" style="text-align: center;">ACADEMIC YEAR 2021- 22</h2> <p style="text-align: center;"> <b>W.E.F:25th February 2022</b></p>
+<div style="display: flex; justify-content: center; align-items: center;"> <table style="border: 2px solid black;">
+<thead>
+<tr>
+<th></th>
+<th>9:00-9:55</th>
+<th>9:55-10:50</th>
+<th>11:10-12:05</th>
+<th>12:05-1:00</th>
+<th>1:00-1:55</th>
+<th>1:55-2:50</th>
+<th>3:10-4:05</th>
+<th>4:05-5:00</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>MON</th>
+<td>TCS-602</td>
+<td>TCS 693</td>
+<td>TCS-601</td>
+<td>TCS-691/TCS-651/TCS-619</td>
+<td>Lunch</td>
+<td>XCS-601 (PDP)</td>
+<td colspan="2">Career Excellence Classes (CEC)</td>
+</tr>
+<tr>
+<th>TUE</th>
+<td>TCS-602</td>
+<td>TCS 693</td>
+<td>TCS-601</td>
+<td>TCS-691/TCS-651/TCS-619</td>
+<td>Lunch</td>
+<td>XCS-601 (QAR)</td>
+<td>TCS-604</td>
+<td>TCS-604</td>
+</tr>
+<tr>
+<th>WED</th>
+<td>TCS-602</td>
+<td>TCS 693</td>
+<td>TCS-601</td>
+<td>TCS-691/TCS-651/TCS-619</td>
+<td>Lunch</td>
+<td>LIB</td>
+<td>TCS-604</td>
+<td>TCS-604 (Discussion Class)</td>
+</tr>
+<tr>
+<th>THU</th>
+<td>TCS-602</td>
+<td>TCS 693</td>
+<td>TCS-601</td>
+<td>TCS-691/TCS-651/TCS-619 <br> (Discussion Class)</td> <td>Lunch</td>
+<td colspan="3">SWAYAM/Training/Extra-Curricular Activities/LIB</td>
+</tr>
+<tr>
+<th>FRI</th>
+<td colspan="2">Software Engineering Lab</td>
+<td colspan="2">Compiler Design Lab</td>
+<td>Lunch</td>
+<td>LIB</td>
+<td colspan="2">Web Development Lab</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br><br><br><br>
+</div>
+</body>
+</html>
+Output:-
+
+
+
+
+## 3. Use frames such that page is divided into 3 frames 20% on left to show contents of pages, 60% in center to show body of page, remaining on right to show remarks.
+(Frame.html)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frames</title>
+</head>
+<frameset cols="20%,80%" noresize="noresize" border="10">
+<frame src="../HTML/frames/menu.html" name="menu_page">
+<frame src="../HTML/frames/main.html" name="main_page">
+</frameset>
+</html> (main.html)
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+<marquee Scrollamount=20>Select any planet </marquee>
+</h1>
+</body>
+</html> (menu.html)
+<!DOCTYPE html>
+<html>
+<head>
+<style> body {
+background-color: #fee7c1;
+}
+h1 {
+color: #81130f;
+text-align: center;
+font-family: sans-serif; font-size: 35px;
+}
+a:link { color: blue;
+background-color: transparent;
+}
+a:visited { color: purple;
+background-color: transparent;
+}
+a:hover { color: red;
+background-color: transparent;
+}
+</style>
+</head>
+<body>
+<h1> Selected Planets</h1>
+<p style="font-size: 20px"> Read essential details about following planets.
+<p>
+<ul style="font-size: 20px">
+<li><u> <a href="https://en.wikipedia.org/wiki/Venus" target="main_page">Venus</a></u></li>
+<br>
+<li><u> <a href="https://en.wikipedia.org/wiki/Earth" target="main_page">Earth</a></u></li>
+<br>
+<li><u> <a href="https://en.wikipedia.org/wiki/Jupiter" target="main_page">Jupiter</a></u></li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+## 4. Write an HTML page that contains a selection box with a list of 5 countries, when the user selects a country, its capital should be printed next to the list; Add CSS to customize the properties of the font of the capital (color, bold and font size).
+<html>
+<head>
+    <title>capitals of countries</title>
+    <style>
+        p {
+            color: red;
+            font-weight: bold;
+            font-size: 50;
+        }
+    </style>
+    <script language="javascript">
+        function capital() {
+            var cunt = document.forms["frm1"].country.value;
+            var capital = " Please select any country ";
+            if (cunt == "india") {
+                capital = "NEW DELHI";
+            }
+            if (cunt == "china") {
+                capital = "BEIJING";
+            }
+            if (cunt == "pakistan") {
+                capital = "ISLAMABAD";
+            }
+            if (cunt == "bangladesh") {
+                capital = "DHAKA";
+            }
+            if (cunt == "japan") {
+                capital = "TOKYO";
+            }
+            if (cunt == "select") {
+                capital = "Please select any country";
+            }
+            document.getElementById("capt").innerHTML = capital;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm1">
+        <br />
+        <center>
+            Select a Country : <select name="country" onchange="capital()">
+                <option value="select">--SELECT--</option>
+                <option value="india">INDIA</option>
+                <option value="china">CHINA</option>
+                <option value="pakistan">PAKISTAN</option>
+                <option value="bangladesh">BANGLADESH</option>
+                <option value="japan">JAPAN</option>
+            </select>
+            <br />
+            <br />
+            <font color="green" size="6">Capital is :</font>
+            <p id="capt"></p>
+        </center>
+    </form>
+</body>
+</html>
+
+
+
+  
+
+  
+
+
+
+
+## 5. Develop and demonstrate the usage of inline, internal and external style sheet using CSS.
+
+Index.html
+
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS internal,external and inline</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: linen;
+      }
+      .first {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">BOX</div>
+    <div class="second">BOX</div>
+    <div style="background-color: red; height: 100px; width: 100px">BOX</div>
+  </body>
+</html>
+
+Style.css
+.second{
+    background-color: green;
+    height:100px;
+    width:100px;
+}
+Output:-
+
+
+
+## 6. Create a student registration system page using HTML tags and apply box model using external CSS.
+
+Index.html
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="signup-form" action="/register" method="post"> 
+    <div class="form-header">
+        <h1>Registration</h1>
+    </div>
+    <div class="form-body">
+    <div class="horizontal-group">
+        <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+        </div>
+        <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+        </div>
+    </div>
+<div class="form-group">
+    <label for="email" class="label-title">Email*</label>
+    <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+  </div>
+  <div class="horizontal-group"> 
+    <div class="form-group left">
+      <label for="password" class="label-title">Password *</label>
+      <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
+    </div> 
+    <div class="form-group right">
+      <label for="confirm-password" class="label-title">Confirm Password *</label>
+      <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
+    </div>
+  
+  </div>
+<div class="horizontal-group">
+    <div class="form-group left">
+        <label class="label-title">Gender:</label>
+        <div class="input-group">
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male"> Male</label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female"> Female</label>
+        </div>
+    </div>
+    <div class="form-group right">
+        <label class="label-title">Hobbies</label>
+        <div>
+            <label>
+                <input type="checkbox" value="Web">Music</label>
+            <label>
+                <input type="checkbox" value="iOS">Sports</label>
+            <label>
+                <input type="checkbox" value="Andriod">Travel</label>
+            <label>
+                <input type="checkbox" value="Game">Movies</label>
+        </div>
+    </div> 
+</div>
+ <div class="horizontal-group">
+    <div class="form-group left" >
+      <label class="label-title">Source of Income</label>
+      <select class="form-input" id="level" >
+        <option value="B">Employed</option>
+        <option value="I">Self-employed</option>
+        <option value="A">Unemployed</option>
+      </select>
+    </div> 
+    <div class="form-group right">
+      <label for="experience" class="label-title">Income</label>
+      <input type="range" min="20" max="100" step="5"  value="0" id="experience" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+      <span id="range-label">20K</span>
+    </div> 
+  </div>
+<div class="horizontal-group">
+    <div class="form-group left" >
+      <label for="choose-file" class="label-title">Upload Profile Picture</label>
+      <input type="file" id="choose-file" size="80">
+    </div>
+    
+    <div class="form-group right">
+      <label for="experience" class="label-title">Age</label>
+      <input type="number" min="18" max="80"  value="18" class="form-input">
+    </div> 
+  </div>
+<div class="form-group">
+    <label for="choose-file" class="label-title">Bio</label>
+    <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+  </div>
+    </div> 
+    <div class="form-footer">
+        <!-- form footer -->
+<div class="form-footer">
+    <span>* required</span>
+    <button type="submit" class="btn">Create</button>
+  </div>
+    </div>
+    </form>
+    <script>
+        var rangeLabel = document.getElementById("range-label");
+        var experience = document.getElementById("experience");
+        function change() {
+        rangeLabel.innerText = experience.value + "K";
+        }
+      </script>
+</body>
+</html>
+
+
+ Style.css
+
+@import url('httpss://fonts.googleapis.com/css?family=Roboto');
+body {
+  background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+}
+.signup-form {
+  font-family: "Roboto", sans-serif;
+  width:650px;
+  margin:30px auto;
+  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+}
+.form-header  {
+  background-color: #EFF0F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form-header h1 {
+  font-size: 30px;
+  text-align:center;
+  color:#666;
+  padding:20px 0;
+  border-bottom:1px solid #cccccc;
+}
+.form-body {
+    padding:10px 40px;
+    color:#666;
+  }
+  
+  .form-group{
+    margin-bottom:20px;
+  }
+    .form-body .label-title {
+    color:#1BBA93;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .form-body .form-input {
+      font-size: 17px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #333333;
+      text-align: left;
+      border: 1px solid #d6d6d6;
+      border-radius: 4px;
+      background: white;
+      outline: none;
+  }
+  .horizontal-group .left{
+    float:left;
+    width:49%;
+  }
+  .horizontal-group .right{
+    float:right;
+    width:49%;
+  }  
+  input[type="file"] {
+   outline: none;
+   cursor:pointer;
+   font-size: 17px;
+  }  
+  #range-label {
+   width:15%;
+   padding:5px;
+   background-color: #1BBA93;
+   color:white;
+   border-radius: 5px;
+   font-size: 17px;
+   position: relative;
+   top:-8px;
+  }
+   ::-webkit-input-placeholder {
+   color:#d9d9d9;
+  }
+  .form-footer {
+   clear:both;
+  }
+.signup-form .form-footer  {
+    background-color: #EFF0F1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:10px 40px;
+    text-align: right;
+    border-top: 1px solid #cccccc;
+  }  
+  .form-footer span {
+    float:left;
+    margin-top: 10px;
+    color:#999;  
+    font-style: italic;
+    font-weight: thin;
+  } 
+  .btn {
+     display:inline-block;
+     padding:10px 20px;
+     background-color: #1BBA93;
+     font-size:17px;
+     border:none;
+     border-radius:5px;
+     color:#bcf5e7;
+     cursor:pointer;
+  } 
+  .btn:hover {
+    background-color: #169c7b;
+    color:white;
+  }
+
+
+
+
+## 7. Write a JavaScript program to test the first character of a string is uppercase or not.
+
+   function upper_case(str)
+{
+   regexp = /^[A-Z]/;
+   if (regexp.test(str))
+    {
+      console.log("String's first character is uppercase");
+    } 
+    else
+    {
+      console.log("String's first character is not uppercase");
+    }
+}
+upper_case('Abcd');
+upper_case('abcd');
+
+    A. Write a JavaScript code to take color from user and apply that color to Div tag.
+
+
+<html>
+<head>
+    <style>
+        #Myelement {
+            width: 500px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Myelement" 
+         onclick="changeColor()">
+  </div>
+    <input name="MyColorPicker"
+           type="color"
+           id="MyColorPicker" />
+</body>
+</html>
+<script>
+        function changeColor() {
+            document.getElementById(
+              "Myelement").style.backgroundColor =
+                document.getElementById(
+              "MyColorPicker").value;
+        }  </script>
+
+Output:-
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 8. Write JavaScript to validate the following fields of the Registration page. 1. First Name (Name should be min 4 characters and max 8 characters) 2. Password & Confirm Password (Password should not be less than 8 characters length). 3. Email id (should not contain any invalid mail) 4. Mobile Number (Phone number should be 8 digits only) 5. Last Name and Address (should not be Empty).
+
+Index.html
+<html>
+<head>
+  <style>
+   .content
+   {
+    padding: 50px;
+    margin-left: 25%;
+   }
+   input
+   {
+    padding: 10px;
+   }
+  </style>
+</head>
+<body>
+  <h1 class="har">Login</h1>
+  <div class="content">
+    <label for="name">Full Name:</label>
+    <input type="text" onblur="nameCheck()" value="" id="fname"><br>
+    <label for="name">Password:</label>
+    <input type="password" onblur="passCheck()" value="" id="pass"><br>
+    <label for="name"> Confirm Password:</label>
+    <input type="password" onblur="conPassCheck()" value="" id="cpass"> <br>
+    <label for="name">E-mail</label>
+    <input type="email" onblur="eCheck()" value="" id="mail"><br>
+    <label for="mob">Mobile:</label>
+    <input type="text" onblur="mCheck()" value="" id="phone"> <br>
+    <label for="lname">Last Name:</label>
+    <input type="text" onblur="lnCheck()" value="" id="lname"><br>
+    <label for="Address">Address:</label>
+    <input type="text" onblur="addCheck()" value="" id="add">
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
+
+App.js
+
+function nameCheck() {
+  var x = document.getElementById("fname");
+  if (!(x.value.length >= 4 && x.value.length <= 8)) {
+    alert("Name should be at least 4 char and max 8 char long");
+    x.value="";
+  }
+}
+function passCheck() {
+  var paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+  var x = document.getElementById("pass");
+  if (!(x.value.match(paswd))) {
+    alert("Enter Valid password");
+  }
+}
+function conPassCheck() {
+  var x = document.getElementById("pass");
+  var y = document.getElementById("cpass");
+  if (!(x.value==y.value)) {
+    alert("Confirm password should be same as the password");
+  }
+ 
+}
+function eCheck() {
+    var email = document.getElementById("pass");
+  if(email.value=="")
+    {
+    alert('Please fill this field');
+    }
+
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+     if (!filter.test(email.value)) {
+       alert("Please provide a valid email address");
+     }
+}
+function mCheck() {
+  var x = document.getElementById("phone");
+  if (!(x.value.length == 8)) {
+    alert("Phone Number should be 8 char long");
+  }
+}
+function lnCheck() {
+  var x = document.getElementById("lname");
+  if (x.value == "") {
+    alert("Please fill this field");
+  }
+}
+function addCheck() {
+  var x = document.getElementById("add");
+  if (x.value == "") {
+    alert("Please fill this field");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+## 9. Create a HTML form and write JavaScript to generate the invoice with one click of GENERATE INVOICE button. Take any 5 product with rate and quantity and display total for every product. Calculate Grand Total by including 18% GST.
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        input{
+            margin: 5px;
+        }
+        th,td{
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>particulars</th>
+            <th>rate</th>
+            <th>quantity</th>
+            <th>total</th>
+        </tr><tr>
+            <td>Product 1</td>
+            <td><input type="text" id="rate1"></td>
+            <td><input type="text" id="quantity1"></td>
+            <td><input type="text" id="total1"></td>
+        </tr><tr>
+            <td>Product 2</td>
+            <td><input type="text" id="rate2"></td>
+            <td><input type="text" id="quantity2"></td>
+            <td><input type="text" id="total2"></td>
+        </tr><tr>
+            <td>Product 3</td>
+            <td><input type="text" id="rate3"></td>
+            <td><input type="text" id="quantity3"></td>
+            <td><input type="text" id="total3"></td>
+        </tr><tr>
+            <td>Product 4</td>
+            <td><input type="text" id="rate4"></td>
+            <td><input type="text" id="quantity4"></td>
+            <td><input type="text" id="total4"></td>
+        </tr><tr>
+            <td>Product 5</td>
+            <td><input type="text" id="rate5"></td>
+            <td><input type="text" id="quantity5"></td>
+            <td><input type="text" id="total5"></td>
+        </tr><tr>
+            <td colspan="4" style="text-align:center"> Tax : <input type="text" id="tax"> Based on a 18% GST</td>
+        </tr><tr>
+            <td colspan="4" style="text-align:center"> Grandtotal : <input type="text" id="grandtotal"> Vat included</td>
+        </tr>
+    </table>     
+    <script>
+        let total1 = document.getElementById('total1');
+        let total2 = document.getElementById('total2');
+        let total3 = document.getElementById('total3');
+        let total4 = document.getElementById('total4');
+        let total5 = document.getElementById('total5');
+        let p1total = 0;
+        let p2total = 0;
+        let p3total = 0;
+        let p4total = 0;
+        let p5total = 0;
+        total1.addEventListener('click', function fun() {
+            let rate1 =parseInt(document.getElementById('rate1').value);
+            let quantity1 = parseInt(document.getElementById('quantity1').value);            
+            p1total = rate1 * quantity1;
+            total1.value = p1total; 
+
+        });
+        total2.addEventListener('click', function fun() {
+            let rate2 = parseInt(document.getElementById('rate2').value);
+            let quantity2 = parseInt(document.getElementById('quantity2').value);            
+            p2total = rate2 * quantity2;
+            total2.value = p2total; 
+        });
+        total3.addEventListener('click', function fun() {
+            let rate3 = parseInt(document.getElementById('rate3').value);
+            let quantity3 = parseInt(document.getElementById('quantity3').value);            
+            p3total = rate3 * quantity3;
+            total3.value = p3total; 
+        });
+        total4.addEventListener('click', function fun() {
+            let rate4 = parseInt(document.getElementById('rate4').value);
+            let quantity4 = parseInt(document.getElementById('quantity4').value);            
+            p4total = rate4 * quantity4;
+            total4.value = p4total; 
+        });
+        total5.addEventListener('click', function fun() {
+            let rate5 = parseInt(document.getElementById('rate5').value);
+            let quantity5 = parseInt(document.getElementById('quantity5').value);            
+            p5total = rate5 * quantity5;
+            total5.value = p5total; 
+        });
+        let tax = 0;
+        let taxinpt = document.getElementById('tax');
+        taxinpt.addEventListener('click', ()=>{
+            tax = (p1total+p2total+p3total+p4total+p5total)*0.18;
+            taxinpt.value = tax;
+        });
+        let gt = document.getElementById('grandtotal');
+        gt.addEventListener('click', ()=>{
+            gt.value = p1total+p2total+p3total+p4total+p5total+tax;
+        })
+        
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+## 10. 
+    a. Write a JQuery code to give animation to div on click of button.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
+
+Output:
+
+    b. Write a JQuery code to add dynamic element on page on click of button.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Bind Click Event to Dynamically added Elements</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("ol").append("<li>Milk <a href='javascript:void(0);' class='remove'>&times;</a></li>");
+            });
+            $(document).on("click", "a.remove", function () {
+                $(this).parent().remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Add Milk</button>
+    <p>Click the above button to add milk. <p>
+    <ol>
+        <li>Milk</li><li>Milk</li><li>Milk</li>
+    </ol>
+</body>
+
+</html>
+
+
+
+
+
+
+ 		
+## 11. Write a jQuery program to demonstrate the use of mouse event, keyboard event and form event.
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 11</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let i = 0;
+        $(document).ready(function () {
+            //Mouse Event
+            $("p").click(function () {
+                $(this).hide();
+            })
+            $("#p1").hover(function () {
+                alert("You entered !");
+            },
+                function () {
+                    alert("Bye! You now leave !");
+                })
+            //Keyboard event
+            $("input").keypress(function () {
+                $("span").text(i += 1);
+            });
+            //Form event
+            $("#target").blur(function () {
+                alert("Handler for .blur() called.");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Click me first</p>
+    <p>Click me second</p>
+    <p id="p1" style="display: inline; border: 2px solid red">This is text</p><br><br>
+    Enter your name: <input type="text">
+    <p>Keypresses: <span>0</span></p>
+    <form>
+        <input id="target" type="text" value="Field 1">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 12. Write a jQuery program to demonstrate the use of display effect, fade effect and slide effect.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Display Effect
+            $(".btn1").click(function () {
+                $("p").hide();
+
+            });
+            $(".btn2").click(function () {
+                $("p").show();
+            });
+
+            //Fade Effect
+            $("button").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            })
+            //Side Effect
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            width: 50%;
+            background-color: rgb(83, 219, 83);
+            border: solid 1px #c3c3c3;
+            margin: auto;
+        }
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is a paragraph.</p>
+
+    <button class="btn1">Hide</button>
+    <button class="btn2">Show</button>
+    <br><br>
+    <button>Click to fade in/out boxes</button><br><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+    <br>
+    <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+    <br>
+    <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+    <br><br>
+
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!</div>
+
+</body>
+
+</html>
+
+Output:-
+
+
+
+
+
+
+
+
+## 13. A simple calculator web application that takes two numbers and an operator (+, -, /,*and %) from an HTML page and returns the result page with the operation performed on the operands.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="num1">Number1</label>
+        <input type="number"  id="num1" name="num1"><br>
+        <label for="num2">Number2</label>
+        <input type="number"  id="num2" name="num2"><br>
+        <br>
+        <label for="opr">Choose Operation : </label>
+        <select name="opr" id="opr">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="div">Divide</option>
+            <option value="mul">Multiply</option>
+        </select>
+        <br>
+        <input type="button" onClick="submit()" id="submit" value="Submit"><br>
+        <p>Result : </p>
+        <p id="res"></p>
+    </form>
+    <script>
+        but = document.getElementById('submit');
+        but.addEventListener("click" , function()
+        {
+            num1 = parseInt(document.getElementById("num1").value);
+            num2 = parseInt(document.getElementById("num2").value)
+            opr = document.getElementById('opr');
+            select = opr.options[opr.selectedIndex].value;
+            if(select == 'add')
+            {
+                cal = num1+num2;
+                document.getElementById('res').innerHTML = cal;
+            }
+            else if(select == 'sub')
+            {
+                cal = num1-num2;
+                document.getElementById('res').innerHTML = cal;
+            }
+            else if(select == 'div')
+            {
+                cal = num1/num2;
+                document.getElementById('res').innerHTML = cal;
+            }
+            else if(select == 'mul')
+            {
+                cal = num1*num2;
+                document.getElementById('res').innerHTML = cal;
+            }
+        });
+    </script>
+</body>
+</html>
+
+Output:-
+
+
+
+
+
+
+
+
+
+
+
+## 14. Write PHP program for student registration. Perform insert, display, update and delete operations from database. (use any database).
+
+
+_db_connect.php
+<?php
+$server = "localhost ";
+$username = 'root';
+$password = '';
+$database = "student";
+$conn = mysqli_connect($server, $username, $password, $database);
+if(!$conn) 
+die("Error " . mysqli_connect_error());
+else
+echo 'Connection made successfully!!'
+?>
+
+Output:-
+
+
+
+
+
+welcome.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 210px;
+        }
+        li{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a class="nav-link" href="insert.php">Insert</a></li>
+            <li><a class="nav-link" href="display.php">Display</a></li>
+            <li><a class="nav-link" href="update.php">Update</a></li>
+            <li><a class="nav-link" href="delete.php">Delete</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
+Output:
+
+
+ 
+
+insert.php
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+    if($gender == 'male') {
+        $gender = 'm';
+    }else $gender = 'f';
+    require 'partials/_db_connect.php';
+    $sql = "INSERT INTO student(`name`, `email`, `gender`) values('$name', '$email', '$gender')";
+    $result = mysqli_query($conn, $sql);
+    if($result) {
+        echo "<script>
+        alert('Regitration Successful');
+        </script>";
+    }else {
+        echo "<script>
+        alert('Not Registered');
+        </script>";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:210px;
+        }
+        a{
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <a href="/anant/registration/Welcome.php">Home</a>
+    </h2>
+    <div id="container">
+        <form action="insert.php" method="post">
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email">
+            <h3>Gender</h3>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br><br>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+ 
+
+
+
+display.php
+<?php
+echo '<title>Display</title>';
+echo '
+<h2>
+<a style="font-size:25px;" href="/anant/registration/Welcome.php">Home</a>
+</h2>';
+require 'partials/_db_connect.php';
+$sql = 'SELECT * FROM student';
+$result = mysqli_query($conn, $sql);
+if($result) {
+    $num = mysqli_num_rows($result);
+    if($num > 0) {
+       echo '<table border="2" cellspacing="3" cellpadding="2">
+       <tr>
+           <th>Name</td>
+           <th>Email</td>
+           <th>Gender</td>
+       </tr>';
+        while($row = mysqli_fetch_assoc($result)) {
+            $gen = "Male";
+            if($row['gender'] == 'f') $gen = 'Female';
+            echo 
+            '<tr>
+                 <td>'.$row['name'].'</td>
+                 <td>'.$row['email'].'</td>
+                 <td>'.$gen.'</td>
+            </tr>';
+        }
+        echo '</table>';
+    }
+}
+?>
+ 
+
+
+
+
+
+
+
+update.php
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    require 'partials/_db_connect.php';
+    $sql = "update student set `email` = '$email' where `name` = '$name'";
+    $result = mysqli_query($conn, $sql);
+    if($result) {
+        echo "<script>
+        alert('Updation Successful');
+        </script>";
+    }else {
+        echo "<script>
+        alert('User Not Found');
+        </script>";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <style>
+        a{
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <a href="/anant/registration/Welcome.php">Home</a>
+    </h2>
+    <form action="update.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter Name" name="name"><br><br>
+        <label for="email">Enter your New Email:</label>
+        <input type="email" placeholder="Enter new Email" name="email">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
+
+
+ 
+
+
+
+delete.php
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = $_POST['name'];
+    require 'partials/_db_connect.php';
+    $sql = "delete from `student` where `name`='$name'";
+    $result = mysqli_query($conn, $sql);
+    if($result) {
+        echo "<script>
+        alert('Deletion Successful');
+        </script>";
+    }else {
+        echo "<script>
+        alert('User Not Found');
+        </script>";
+    }
+}
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <style>
+        a{
+            font-size:25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <a href="/anant/registration/Welcome.php">Home</a>
+    </h2>
+    <form action="delete.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter Name" name="name">
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+   
+## 15. Write a PHP program to store current date-time in a COOKIE and display the ‘Last visited on’ date-time on the web page upon reopening of the same page.
+
+<?php 
+// time for 60 days in future
+ $cookie_value = time() + 60*60*60*24;
+ setcookie('lastvisit' , date("G:i , m/d/y") , $cookie_value , )
+?>
+<?php
+    if(isset($_COOKIE['lastvisit']))
+    {
+        echo "Your last visit time and date are :  " . $_COOKIE['lastvisit'] . "<br>";
+        setcookie('lastvisit',"",time()-3600);
+    }
+    else{
+        echo "This is your first visit <br>";
+    }
+?>
+
+
+ 
